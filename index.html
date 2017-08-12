@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Brianna's Pixel Art Canvas</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="text/javascript" src="/js/javascript.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+
+<head>
+  <meta charset="utf-8">
+  <title>Brianna's Pixel Art Canvas</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <script type="text/javascript" src="/js/javascript.js"></script>
-  </head>
-  <body>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/javascript.js"></script>
+</head>
+
+<body>
 
 
-    <div class="container">
+  <div class="container">
 
-      <header>
-        <h1 class="title">Bri's Pixel Art Maker</h1>
-        <p class="instructions">Select your color and click a square!</p>
-      </header>
+    <header>
+      <h1 class="title">Bri's Pixel Art Maker</h1>
+      <p class="instructions">Select your color and click a square!</p>
+    </header>
 
-      <div class="wrapper">
-        <div class="pixel"></div>
-      </div>
-
-      <div class="color-wrapper">
-        <div id="red" class="color-choice"></div>
-        <div id="blue" class="color-choice"></div>
-        <div class="color-choice"></div>
-        <div class="color-choice"></div>
-        <div class="color-choice"></div>
-        <div class="color-choice"></div>
-        <div class="color-choice"></div>
-        <div class="color-choice"></div>
-
-      </div>
+    <div class="wrapper">
+      <div class="pixel"></div>
     </div>
 
+    <div class="color-wrapper">
+      <div id="red" class="color-choice"></div>
+      <div id="pink" class="color-choice"></div>
+      <div id="purple" class="color-choice"></div>
+      <div id="blue" class="color-choice"></div>
+      <div id="mediumblue" class="color-choice"></div>
+      <div id="lightblue" class="color-choice"></div>
+      <div id="lightgreen" class="color-choice"></div>
+      <div id="brightgreen" class="color-choice"></div>
+      <div id="limegreen" class="color-choice"></div>
+      <div id="yellow" class="color-choice"></div>
+      <div id="lightorange" class="color-choice"></div>
+      <div id="orange" class="color-choice"></div>
+      <div id="redorange" class="color-choice"></div>
+      <div id="white" class="color-choice"></div>
+    </div>
+
+  </div>
 
 
-    <script type="text/javascript">
-   createGrid(908);
-    </script>
-    <script type="text/javascript">
-   colorSelection();
-    </script>
-  </body>
+
+  <script type="text/javascript">
+    createGrid(908);
+  </script>
+  <script type="text/javascript">
+    colorSelection();
+  </script>
+</body>
+
 </html>
