@@ -30,17 +30,19 @@ function createGrid(number) {
   }
 }
 
-// FUNCTION TO GRAB BACKGROUND COLOR ON CLICK
-// SET BACKGROUND COLOR TO CLICKED PIXEL
-function clickEvent() {
-  let colorDiv = document.getElementById('one')
+
+function colorSelection(clicked) {
+  let colorWrapper = document.querySelector('.color-wrapper')
+  colorWrapper.addEventListener('click', function() {
+    let theID = event.target.getAttribute('id')
+    console.log("this is the ID " + theID)
+
+    let pixelWrapper = document.querySelector('.wrapper')
+    pixelWrapper.addEventListener('click', function (){
+      let thePixel = event.target
+      thePixel.id = theID
+      // thePixel.classList.toggle(theID)
+      console.log(thePixel)
+    })
+  })
 }
-
-// EVENT LISTENER?
-document.addEventListener("click", function() {
-  //list functions here?
-})
-
-
-// -this (element of html doc)
-// -element being clicked or whatever (event.target)
