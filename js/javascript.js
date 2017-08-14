@@ -1,4 +1,3 @@
-console.log("javascript is ready")
 // JQUERY FUNCTION TO CREATE PIXEL DIVS
 // $(document).ready(function(){
 //   createGrid(1174)
@@ -30,19 +29,25 @@ function createGrid(number) {
   }
 }
 
-
+// JS function to add color on click
 function colorSelection(clicked) {
   let colorWrapper = document.querySelector('.color-wrapper')
   colorWrapper.addEventListener('click', function() {
     let theID = event.target.getAttribute('id')
-    console.log("this is the ID " + theID)
 
     let pixelWrapper = document.querySelector('.wrapper')
-    pixelWrapper.addEventListener('click', function (){
+    pixelWrapper.addEventListener('click', function() {
       let thePixel = event.target
       thePixel.id = theID
-      // thePixel.classList.toggle(theID)
-      console.log(thePixel)
+
+
     })
   })
 }
+
+
+let mouseState = false
+
+//event list on canvas for mouse down, set to true
+// event listener on canvas for mouse up, set to false
+// event list for mouseover, if mousestate is true then paint.
