@@ -29,7 +29,7 @@ function createGrid(number) {
   }
 }
 
-// JS function to add color on click
+// JS function to add color on click and paint function
 function colorSelection(clicked) {
   let colorWrapper = document.querySelector('.color-wrapper')
   colorWrapper.addEventListener('click', function() {
@@ -40,14 +40,19 @@ function colorSelection(clicked) {
       let thePixel = event.target
       thePixel.id = theID
 
-
+      let mouseState = false
+      pixelWrapper.addEventListener('mousedown', function() {
+        mouseState = true
+      })
+      pixelWrapper.addEventListener('mouseup', function() {
+        mouseState = false
+      })
+      pixelWrapper.addEventListener('mouseover', function() {
+        if (mouseState === true) {
+          let thePixel = event.target
+          thePixel.id = theID
+        }
+      })
     })
   })
 }
-
-
-let mouseState = false
-
-//event list on canvas for mouse down, set to true
-// event listener on canvas for mouse up, set to false
-// event list for mouseover, if mousestate is true then paint.
